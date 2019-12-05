@@ -66,6 +66,7 @@
                             <td class="product-col">
 
 
+
                                 <img src="img/product/product-1.jpg" alt="">
                                 <div class="p-title">
                                     <h5>Blue Dotted Shirt</h5>

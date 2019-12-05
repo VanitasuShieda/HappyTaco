@@ -28,6 +28,8 @@
     
     <!-- Favicon -->
     <link href="img/logo.png" rel="shortcut icon"/>
+
+
 </head>
 
 <body>
@@ -101,18 +103,21 @@
                                 
                                 <div class="col-md-6 text-left text-lg-center">
                                     <div class="diff-addr">
-                                        <input type="radio" id="dir2" checked>
+                                        <input type="radio" id="dir2" name="direccion" value="dir2">
                                         <label for="dir2">Enviar A Una Direccion Diferente</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6 text-left text-lg-center">
                                     <div class="diff-addr">
-                                        <input type="radio" id="dir1">
-                                        <label for="dir1">Enviar A Mi Direccion</label>
+                                        <input type="radio" id="dir1" name="direccion" value="dir1">
+                                        <label for="dir1" name="direccion">Enviar A Mi Direccion</label>
                                         
                                     </div>
                                 </div>
                             </div>
+                            <tr>
+    <td><input name="radio_comprobar" id="radio_comprobar" type="button" value="Comprobar" /> <input name="radio_activar" id="radio_activar" type="button" value="Activar" /> <input name="radio_desactivar" id="radio_desactivar" type="button" value="Desactivar" /></td>
+  </tr>
                         </div>
                         
                         
@@ -219,16 +224,22 @@
                 
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="payment-method">
+                        <div class="payment-method diff-addr">
                             <hr><h3>Payment</h3><hr>
-                            <ul>
-                                <li>Paypal <img src="img/paypal.jpg" alt=""></li>
-                                <li>Credit / Debit card <img src="img/mastercard.jpg" alt=""></li>
-                                <li>
-                                    <label for="two">Pay when you get the package</label>
-                                    <input type="radio" id="two">
-                                </li>
-                            </ul>
+                            <div>
+                                <div>
+                                    <label for="pago1" name="metodopago" value="PayPal">PayPal <img src="img/paypal.jpg" alt=""> </label>
+                                    <input type="radio" name="metodopago" id="pago1">
+                                </div>
+                                <div>
+                                    <label for="pag2" name="metodopago" value="TCD">Tarjeta Credito / Debito<img src="img/mastercard.jpg" alt=""></label>
+                                    <input type="radio" name="metodopago" id="pago3" value="pago3">     
+                                </div>
+                                <div>
+                                    <label for="pago3" name="metodopago" value="PR">Pagar al Recibir</label>
+                                    <input type="radio" name="metodopago" id="pago3">
+                                </divz>
+                            </div>
                             <button type="submit">Place your order</button>
                         </div>
                     </div>
@@ -257,7 +268,21 @@
     <script src="js/jquery.zoom.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+
+    
+<script type="text/javascript"> 
+
+var array = document.getElementsByName('direccion');
+console.log(Object.values(array));
+
+    if(array[0].checked){
+        window.alert("sometext");
+        console.log("esta checado");
+    }else{
+        console.log("no esta checado");
+    }
+
+</script>
 </body>
 
 </html>

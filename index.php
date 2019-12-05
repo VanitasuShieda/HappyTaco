@@ -92,7 +92,7 @@
 				</div>
 				
 				
-				<div itemprop="articleBody">
+				<div class="articleBody">
 					<div>
 						<p style="text-align:justify"><img src="img/taco.png" style="float:left; margin-right:10px; margin-bottom:10px" border="0" width="530" height="309" /><strong>HappyTaco</strong> es una empresa <strong>100% mexicana</strong> con tradición en la elaboración de la más variada comida mexicana; rica en sueños, experiencias y realidades y una trayectoria de más de 28 años de servicio. Cuenta con la labor entusiasta de más de 100 colaboradores, amantes de las costumbres mexicanas, con una alta aportación social y vocación de servicio, que buscan contribuir en gran medida al desarrollo y progreso de nuestro país, nuestros clientes y compañeros de trabajo.</p>
 						<p style="text-align:justify"><strong>Grupo HappyTaco</strong>, se ha fijado como meta el conservar con orgullo "el verdadero taco mexicano", manteniéndose como líder dentro de la industria restaurantera. Para ello, utiliza solamente materia prima de la más alta calidad en la elaboración de sus productos. Actualmente está conformado por cinco restaurantes en la Ciudad de México y un área de Fiestas y Eventos que se encarga de atender las diversas necesidades de nuestros clientes en cualquier lugar de la República Mexicana. Seguimos en el camino del crecimiento y estaremos abriendo nuevas sucursales en un futuro cercano para llegar a más familias mexicanas.</p>
