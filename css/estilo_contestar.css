@@ -1,0 +1,33 @@
+table, td, th{
+    border: 1px solid tomato;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+table {
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.izquierdo {
+    background-color: lightgreen;
+    flex: 1 1 0;
+}
+
+.derecho {
+    background-color: lavender;
+    flex: 1 1 0;
+}
+
+div {
+    padding: 15px;
+}
