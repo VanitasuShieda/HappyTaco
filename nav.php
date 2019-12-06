@@ -205,18 +205,21 @@ if(isset($_SESSION["user_id"])){
 				
 				
 				<?php
-				
+								echo "<script>
+									console.log('" . $_SERVER['   '] . "');
+								</script>";
 								if($_SERVER['PHP_SELF'] === 'index.php')
 								{
-
+									//notign;
+									
 								}
 								else
 								{
-									echo "<!-- Header  con logo -->
-									<header class='py-6 bg-img-all' style='background-image: url('img/bg-logo.jpg');'>
-										<img class='img-fluid d-block mx-auto logo-size' src='img/logo.png' alt=''>
+									echo '<!-- Header  con logo -->
+									<header class="py-6 bg-img-all" style="background-image: url(img/bg-logo.jpg);">
+										<img class="img-fluid d-block mx-auto logo-size" src="img/logo.png" alt="">
 					
-									</header>";
+									</header>';
 								}
 
 				?>
