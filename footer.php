@@ -5,9 +5,15 @@
     <section class="footer-section1">
         <div>
             <section>
-                    <p>links o algo aqui </p>
+                <h3 style="color: white;">Sucursales</h3>
+                <style>p{color:#999;}</style>
+                <p><strong>Summarine</strong><br>Lázaro Cárdenas 41 <br> Pabellon de Arteaga<br>   Tels. 465-119-2159        </p>
+                
+                <p><strong>Fidele Bronza</strong><br>Vivero del Altiplano 142 <br> Aguascalientes. <br>Tels. 449-502-7288                   </p>
+                
+                <p><strong>Mikaros</strong><br>Calpulalpan #110 <br>Rincon de Romos <br>Tels. 449-390-3537            </p>
             </section>
-          
+
         </div>
         <div>
             <section class="home-newsletter">
@@ -29,23 +35,23 @@
             </section>
         </div>
         <div>
-            
-            
-        <center class="home-newsletter">
-            <div class="container">
-                <div class="single">
-                <h2>HappyClientes!!!</h2>
-            <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=275128"></a><br>
+
+
+            <center class="home-newsletter">
+                <div class="container">
+                    <div class="single">
+                        <h2>HappyClientes!!!</h2>
+                        <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="http://www.websmultimedia.com/contador-de-visitas.php?id=275128"></a><br>
+                    </div>
                 </div>
-            </div>
-        </center>
-            
+            </center>
+
         </div>
-        
-        
+
+
     </section>
-    
-    
+
+
     <div class="social-links-warp">
         <div class="container">
             <div class="social-links">
@@ -58,13 +64,15 @@
                 <a href="" class="tumblr"><i class="fa fa-tumblr-square"></i><span>tumblr</span></a>
             </div>
         </div>
-        
+
     </div>
 </footer>
 
 <footer class="py-1 footer-section">
     <div class="container">
-        <p class="text-white text-center mt-1   ">Copyright &copy; HappyTaco <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">Mikaros</a><br>ISC - CCBAS - Proyecto Final - Programación de Sistemas Web</p>
+        <p class="text-white text-center mt-1   ">Copyright &copy; HappyTaco <script>
+                document.write(new Date().getFullYear());
+            </script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="" target="_blank">Mikaros</a><br>ISC - CCBAS - Proyecto Final - Programación de Sistemas Web</p>
     </div>
 </footer>
 
