@@ -38,7 +38,6 @@
 	<div id="producto"></div>
 	<script src="js/productosDinamicos.js"></script>
 	
-	
 	<!-- End Main --> 
 	
 	

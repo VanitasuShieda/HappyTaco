@@ -3,9 +3,18 @@ var ofertas;
 var carrito = new Array();
 
 window.onload = function() {
+    var cat = getParameterByName("categoria");
+    console.log(cat);
     verOfertas();
-    verProductos("Todos");
+    verProductos(cat);
 };
+
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+    results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
 
 function verOfertas() {
     var peticion = new XMLHttpRequest(); //objeto para realizar el request
