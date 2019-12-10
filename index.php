@@ -69,7 +69,7 @@
 				</div>
 				<div class="carousel-item">
 					<img src="img/c4.jpg" class="d-block w-100" alt="...">
-					<div class="carousel-caption d-none d-md-block">
+					<div class="carousel-caption d-none d-md-block">	
 					</div>
 				</div>
 			</div>
