@@ -216,7 +216,10 @@ if (isset($_SESSION["user_id"])) {
 		}
 	</script>
 
+<script src="js/productosDinamicos.js"></script>
 </body>
+
+
 
 
 

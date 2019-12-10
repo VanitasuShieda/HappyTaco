@@ -35,7 +35,8 @@
 	?>	
 	<!-- Main-->
 	
-	
+	<div id="producto"></div>
+	<script src="js/productosDinamicos.js"></script>
 	
 	
 	<!-- End Main --> 
@@ -56,5 +57,8 @@
 	<script src="js/jquery.zoom.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 	<script src="js/main.js"></script>
+
+
 </body>
+
 </html>

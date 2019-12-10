@@ -19,22 +19,22 @@
 					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#">Tienda</a>
+					<a class="nav-link" href="productos.php" onclick="verProductos('Todos')">Tienda</a>
 					<ul>
-						<li><a class="nav-link" href="">Tacos</a>
+						<li><a class="nav-link" href="" onclick="verProductos('Tacos')">Tacos</a>
 							<ul>
 								<li><a class="nav-link" href="">Pastor</a></li>
 								<li><a class="nav-link" href="">Adobada</a></li>
 								<li><a class="nav-link" href="">Birria</a></li>
 							</ul>
 						</li>
-						<li><a class="nav-link" href="">Tortas</a>
+						<li><a class="nav-link" href="productos.php" onclick="verProductos('Tortas')">Tortas</a>
 							<ul>
 								<li><a class="nav-link" href="">subsub1</a></li>
 								<li><a class="nav-link" href="">subsub2</a></li>
 							</ul>
 						</li>
-						<li><a class="nav-link" href="">Quesadillas</a> 
+						<li><a class="nav-link" href="productos.php" onclick="verProductos('Quesadillas')">Quesadillas</a> 
 							<ul>
 								<li><a class="nav-link" href="" >Adobada</a>                        </li>
 								<li><a class="nav-link" href="">Pastor</a>                        </li>
@@ -121,5 +121,7 @@
 					
 				</nav>    
 
-    </body>
+	</body>
+	
+	<script src="js/productosDinamicos.js"></script>
 </html>
