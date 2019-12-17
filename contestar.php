@@ -1,11 +1,12 @@
 <?php
 
+    session_start();
+
     // Este script solo lo puede acceder el administrador
-    if (isset($_POST['username']) && isset($_POST['pass']) && $_POST['username'] == 'ADMIN' && $_POST['pass'] == "CONTRASEÑA"){
-        session_start();
-        $_SESSION['username'] = "ADMIN";
+    if (isset($_SESSION['user']) && isset($_SESSION['pass']) && $_SESSION['user'] == 'ADMIN' && $_SESSION['pass'] == "CONTRASEÑA"){
+        // No hace nada
     } else {
-        header("Location:inicia_sesion_admin.html");
+        header("Location:login_admin.php");
     }
 
 ?>
@@ -29,6 +30,12 @@
 
     <script src="JS/contestar_script.js"></script>
     <link rel="stylesheet" href="CSS/estilo_contestar.css">
+
+    <?php
+
+        include 'nav_admin.php';
+
+    ?>
 </head>
 <body>
     

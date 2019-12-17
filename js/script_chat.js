@@ -14,7 +14,7 @@ function actualiza(){
 
     // Si el usuario esta vacio lo contare como que no
     // ha iniciado sesion
-    if (usuario == "guest"){
+    if (usuario == ""){
         cadena = "<h4>Inicia sesion para poder mandar mensajes</h4>";
     } else {
         cadena = "<table><tr><td>";

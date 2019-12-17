@@ -2,13 +2,14 @@
 
     // Se llama chat para que pueda ser incluido en los demas codigos usando el
     // include 'chat.php' y listo :)
+
     $username = "";
 
     // En esta parte del codigo vamos a indicar cual es nuestro username
     // Esto servira para que nuestros mensajes se mandan con nuestro username
     // Si la sesion esta vacia, no lo dejamos hacer nada ya que necesitamos que inicie sesion
     if (empty($_SESSION['username'])){
-        $username = "Omar";
+        $username = "";
     } else {
         $username = $_SESSION['username'];
     }
@@ -19,6 +20,11 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <!-- Font awesome -->
     <script src="https://use.fontawesome.com/72e2687a51.js"></script>
@@ -71,7 +77,7 @@
 
             <?php
 
-            if ($username == "guest"){
+            if ($username == ""){
             ?>
                 <h4>Inicia sesion para poder mandar mensajes</h4>
             <?php

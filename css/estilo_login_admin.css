@@ -1,0 +1,20 @@
+.forma {
+    text-align: center;
+    justify-content: center;
+    border: 1px solid grey;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+body {
+    padding: 20px;
+}
+
+.centro {
+    text-align: center;
+}
+
+img {
+    width: 10em;
+    max-width: 100%;
+}
