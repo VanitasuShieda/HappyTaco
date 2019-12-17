@@ -29,17 +29,19 @@
 
 
 	<script>
-    function enviar_datos(url,env){
-      $.ajax({
-        type: "POST",
-        url: url,
-        data: {array: env},
-        success: function(data)  {
-          console.log(data);
-        }
-      });
-    }
-</script>
+		function enviar_datos(url, env) {
+			$.ajax({
+				type: "POST",
+				url: url,
+				data: {
+					array: env
+				},
+				success: function(data) {
+					console.log(data);
+				}
+			});
+		}
+	</script>
 </head>
 
 <body>
@@ -56,36 +58,40 @@
 	<script src="js/productosDinamicos.js"></script>
 
 	<br>
-	
+
 	<br>
 	<!-- End Main -->
 
-	<div class="col-lg-3">
-                        <div class="order-table">
-                            <div class="cart-item">
-                                <span>Product</span>
-                                <p class="product-name">Blue Dotted Shirt</p>
-                            </div>
-                            <div class="cart-item">
-                                <span>Price</span>
-                                <p>$29</p>
-                            </div>
-                            <div class="cart-item">
-                                <span>Quantity</span>
-                                <p>1</p>
-                            </div>
-                            <div class="cart-item">
-                                <span>Shipping</span>
-                                <p>$10</p>
-                            </div>
 
-                            <div class="cart-total">
-                                <span>Total</span>
-                                <p>$39</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>	
+	<button onclick="myFunction()"> picale wee</button>
+
+	<div id="eg"></div>
+
+
+
+
+
+
+	<div class="col-lg-3">
+		<div class="order-table" id="table">
+			<div class="cart-item">
+				<span>Product</span>
+				<p class="product-name">Blue Dotted Shirt</p>
+				<br>
+				<span>Price</span>
+				<p>$29</p>
+				<br>
+				<span>Quantity</span>
+				<p>1</p>
+			</div>
+
+			<div class="cart-total">
+				<span>Total</span>
+				<p>$39</p>
+			</div>
+		</div>
+	</div>
+	</div>
 
 
 

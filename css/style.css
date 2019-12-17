@@ -76,6 +76,11 @@ body {
     z-index: 2;
 }
 
+.imgcart {
+    width: 25px;
+    height: 25px;
+}
+
 .contact-section .der {
     max-width: 300px;
     margin: 0 auto;
@@ -567,6 +572,8 @@ header a {
 }
 
 .order-table .cart-item p {
+    display: inline-table;
+    text-align: right;
     float: right;
     color: #1e1e1e;
     font-size: 18px;

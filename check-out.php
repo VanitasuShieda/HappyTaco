@@ -207,18 +207,12 @@
                             <div class="cart-item">
                                 <span>Product</span>
                                 <p class="product-name">Blue Dotted Shirt</p>
-                            </div>
-                            <div class="cart-item">
+                                <br>
                                 <span>Price</span>
                                 <p>$29</p>
-                            </div>
-                            <div class="cart-item">
+                                <br>                     
                                 <span>Quantity</span>
                                 <p>1</p>
-                            </div>
-                            <div class="cart-item">
-                                <span>Shipping</span>
-                                <p>$10</p>
                             </div>
 
                             <div class="cart-total">
