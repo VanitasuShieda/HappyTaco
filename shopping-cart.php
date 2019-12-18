@@ -2,49 +2,49 @@
 <html lang="zxx">
 
 <head>
-	<title>HappyTaco - Shopping Cart</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="">
-	<meta name="Mikaros" content="">
+    <title>HappyTaco - Shopping Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="Mikaros" content="">
 
-	<!-- Google Font -->
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-		
-	<!--  Stylesheets  -->
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/style2.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css"/>
-	<link rel="stylesheet" href="css/flaticon.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css"/>
-	<link rel="stylesheet" href="css/jquery-ui.min.css"/>
-	<link rel="stylesheet" href="css/owl.carousel.min.css"/>
-	<link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-	
-	<!-- Bootstrap CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	<!-- Favicon -->
-	<link href="img/logo.png" rel="shortcut icon"/>
+    <!--  Stylesheets  -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
 
-	
-	
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link href="img/logo.png" rel="shortcut icon" />
+
+
+
 </head>
 
 <body>
-	
-	<!-- barra de navegacion -->
-	<?php   
-		include 'nav.php';
-	?>
 
-	
-	<!-- Main-->
+    <!-- barra de navegacion -->
+    <?php
+    include 'nav.php';
+    ?>
 
-	<br><br>
 
-	<!-- Cart Page Section Begin -->
+    <!-- Main-->
+
+    <br><br>
+
+    <!-- Cart Page Section Begin -->
     <div class="cart-page">
 
         <!--  script que analize el carrito y en dado caso muestra tabla, llenar con php o js  -->
@@ -61,11 +61,9 @@
                             <th></th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="tbody">
                         <tr>
                             <td class="product-col">
-
-
 
                                 <img src="img/product/product-1.jpg" alt="">
                                 <div class="p-title">
@@ -74,31 +72,33 @@
                             </td>
                             <td class="price-col">$29</td>
                             <td class="quantity-col">
-                                <div class="pro-qty">
+                                <div>
+                                    <button class="qtybtn">-</button>
                                     <input type="text" value="1">
+                                    <button class="qtybtn">+</button>
                                 </div>
                             </td>
                             <td class="total">$29</td>
                             <td class="product-close">x</td>
                         </tr>
-                    </tbody>  
+                    </tbody>
                 </table>
-			</div>
-			
+            </div>
+
             <div class="cart-btn">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="coupon-input">
-                                <input type="text" placeholder="Enter cupone code">
-                            </div>
-                        </div>
-                        <div class="col-lg-5 offset-lg-1 text-left text-lg-right">
-                            <div class="site-btn clear-btn"><a href="index.php">Limpiar</a></div>
-                            <div class="site-btn update-btn">Actualizar</div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="coupon-input">
+                            <input type="text" placeholder="Enter cupone code">
                         </div>
                     </div>
+                    <div class="col-lg-5 offset-lg-1 text-left text-lg-right">
+                        <div class="site-btn clear-btn"><a href="index.php">Limpiar</a></div>
+                        <div class="site-btn update-btn">Actualizar</div>
+                    </div>
                 </div>
-			
+            </div>
+
         </div>
         <div class="shopping-method">
             <div class="container">
@@ -162,41 +162,40 @@
 
         <div class="container spad">
             <section class="footer-section1">
-        	    <div>
-           			 <img src="img/espera.gif" alt="">
-        		</div>
-				<div>
- 					<p>tu carrito esta vacio! realiza una compra </p>
-				</div>
+                <div>
+                    <img src="img/espera.gif" alt="">
+                </div>
+                <div>
+                    <p>tu carrito esta vacio! realiza una compra </p>
+                </div>
             </section>
         </div>
-       <!--  en caso de que este vacia mostrar esta imagen -->  
-       
+        <!--  en caso de que este vacia mostrar esta imagen -->
+
 
     </div>
     <!-- Cart Page Section End -->
-	    
-	<!-- End Main --> 
-	
 
-<!-- Footer -->
- <?php
-	include 'footer.php';
- ?>
+    <!-- End Main -->
 
 
-	<!-- Bootstrap JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-		<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.slicknav.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
-	<script src="js/jquery.zoom.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/main.js"></script>
-	</body>
-	
+    <!-- Footer -->
+    <?php
+    include 'footer.php';
+    ?>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.zoom.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
 </html>
-	

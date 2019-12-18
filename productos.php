@@ -28,20 +28,6 @@
 	<link href="img/logo.png" rel="shortcut icon" />
 
 
-	<script>
-		function enviar_datos(url, env) {
-			$.ajax({
-				type: "POST",
-				url: url,
-				data: {
-					array: env
-				},
-				success: function(data) {
-					console.log(data);
-				}
-			});
-		}
-	</script>
 </head>
 
 <body>
@@ -62,36 +48,6 @@
 	<br>
 	<!-- End Main -->
 
-
-	<button onclick="myFunction()"> picale wee</button>
-
-	<div id="eg"></div>
-
-
-
-
-
-
-	<div class="col-lg-3">
-		<div class="order-table" id="table">
-			<div class="cart-item">
-				<span>Product</span>
-				<p class="product-name">Blue Dotted Shirt</p>
-				<br>
-				<span>Price</span>
-				<p>$29</p>
-				<br>
-				<span>Quantity</span>
-				<p>1</p>
-			</div>
-
-			<div class="cart-total">
-				<span>Total</span>
-				<p>$39</p>
-			</div>
-		</div>
-	</div>
-	</div>
 
 
 

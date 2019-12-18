@@ -160,6 +160,10 @@ nav li ul li ul {
     top: 0px;
 }
 
+nav .disp-table{
+    right: 200px;
+}
+
 .py-6 {
     padding-top: 10rem!important
 }
@@ -334,6 +338,14 @@ header a {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     height: 100%;
+}
+
+.qtybtn{
+    height: 56px;
+    width: 173px;
+    border: 2px solid #EEF1F2;
+    border-radius: 50px;
+    text-align: center;
 }
 
 .cart-table table .quantity-col .pro-qty .qtybtn {
@@ -550,6 +562,8 @@ header a {
     color: #1e1e1e;
 }
 
+
+
 .order-table {
     background: #f9fbfb;
     padding-top: 30px;
@@ -557,7 +571,16 @@ header a {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 25px;
+    height: 600px;
+    width: 400px;
 }
+
+.cart-item table{
+    height: 100%;
+    width:100%;
+}
+
+
 
 .order-table .cart-item {
     overflow: hidden;
