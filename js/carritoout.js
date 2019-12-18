@@ -1,22 +1,56 @@
 var ofertas;
-var carrito =  new Array();
+var carrito = new Array();
+var cupones;
+var cuponesactive = new Array();
 
 window.onload = function() {
-     
-    document.getElementById("cartn").innerHTML = "0"; 
+    checkcupones();
+    document.getElementById("cartn").innerHTML = "0";
 
-    if( getCookie("cartshop")  ) {
-        var aux = JSON.parse(getCookie("cartshop"));
-        for(var  k=0; k<aux.length; k++){
-            carrito.push(aux[k]);
-        }      
+    if (getCookie("cartshop")) {
+        carrito = JSON.parse(getCookie("cartshop"));
+        document.getElementById("cartn").innerHTML = carrito.length;
 
+        if (getCookie("cuponesactive")) {
+            cuponesactive = JSON.parse(getCookie("cuponesactive"));
+        }
+        ofertas = aux.length;
+        myFunction();
     }
-    
-    ofertas= aux.length;
-    myFunction()
-         
+
+
 };
+
+
+
+function checkcupones() {
+    var peticion = new XMLHttpRequest(); //objeto para realizar el request
+    peticion.open("GET", "../php/ConsultaCupones.php", true);
+    peticion.setRequestHeader("Content-type", "application/json");
+    peticion.onreadystatechange = function(aEvt) {
+        if (peticion.readyState == 4) {
+            if (peticion.status == 200) {
+                if (peticion.responseText != "") { //si la peticion fue exitosa obtenemos los datos
+                    cupones = JSON.parse(peticion.responseText);
+                    console.log("cupones");
+                } else {
+                    alert("No OK");
+                }
+            }
+        }
+    };
+    peticion.send(null);
+}
+
+function pagoOXXO() {
+    var contenido = document.getElementById("oxxo");
+    var img = document.createElement("img");
+    img.src = "img/oxxopago.png";
+    contenido.appendChild(img);
+
+
+}
+
 
 function myFunction() {
 
@@ -26,7 +60,7 @@ function myFunction() {
     var tot;
     var numero = document.getElementById("cartn");
     numero.innerHTML = carrito.length;
-   
+
     var pagetable = document.getElementById("table2");
     pagetable.innerHTML = "";
     pagetable.className = "order-table";
@@ -49,7 +83,7 @@ function myFunction() {
         var tab2 = document.createElement("tr");
         var tab3 = document.createElement("tr");
         var tab4 = document.createElement("tr");
-        
+
         var ele0 = document.createElement("td");
         var ele1 = document.createElement("td");
         var ele2 = document.createElement("td");

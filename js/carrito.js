@@ -1,12 +1,18 @@
 var ofertas;
 var carrito = new Array();
 var cupones;
+var cuponesactive = new Array();
+
 
 window.onload = function() {
     checkcupones();
     if (getCookie("cartshop")) {
         carrito = JSON.parse(getCookie("cartshop"));
         document.getElementById("cartn").innerHTML = carrito.length;
+
+        if (getCookie("cuponesactive")) {
+            cuponesactive = JSON.parse(getCookie("cuponesactive"));
+        }
 
         ofertas = carrito.length;
         pagecar();
@@ -92,22 +98,50 @@ function changemenos(id_prod) {
 
 
 function limpiar() {
-    var limpi = document.getElementById("cupon");
-    console.log(limpi.value);
+    var butsec = document.getElementById("butlim");
+    butsec.innerHTML = "";
+
+    var limpi = document.createElement("input");
     limpi.setAttribute("value", "");
+    limpi.setAttribute("id", "cupon");
+    limpi.placeholder = "Introduce tu cupon aqui";
 
-
-
-    //no funciona >:'c
+    butsec.appendChild(limpi);
 }
 
 function insertcupon() {
     var tbody = document.getElementById("tbody"); //modificar el contenido de la tabla
+    var banderacu = false;
+    var cuponin = document.getElementById("cupon").value;
+    console.log(cuponin.length);
+    if (cuponin.length != 6) {
+        alert("!! " + cuponin + "  !!  No Es un Cupon Valido");
+    } else {
+        for (var i = 0; i < cupones.length; i++) {
+            if (cupones[i]['codigo'] == cuponin) {
+                var cuponaux = {
+                    'id': cupones[i]['id'],
+                    'imagen': cupones[i]['imagen'],
+                    'nombre': cupones[i]['nombre'],
+                    'codigo': cupones[i]['codigo'],
+                    'descripcion': cupones[i]['descripcion'],
+                    'descuento': cupones[i]['descuento'],
+                    'tipo': cupones[i]['tipo']
+                };
+                banderacu = true;
+                cuponesactive.push(cuponaux);
+                document.cookie = "cuponesactive = " + JSON.stringify(cuponesactive);
+                break;
+            }
+        }
 
-    //insertar los cupones en la tabla y hacer operaciones si es posible
-    //anadirlos al carrito basandose en categoria y id eso es pedo mio
+        if (!banderacu) {
+            alert("!! " + cuponin + "  !!  No Existe dentro de nuestros Cupones");
+        } else {
+            pagecar();
+        }
+    }
 
-    //crear una cookie de cupones y ya estufas
 }
 
 function pagecar() {
@@ -250,6 +284,8 @@ function pagecar() {
 
 
         } //fin for
+
+
 
 
         //si la cookie de cupones existe anadir a la tabla visualmente solamente otro for

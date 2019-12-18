@@ -86,7 +86,7 @@
             <div class="cart-btn">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="coupon-input">
+                        <div class="coupon-input" id="butlim">
                             <input id="cupon" type="text" placeholder="Introduce tu cupon aqui">
                         </div>
                     </div>

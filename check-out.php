@@ -214,7 +214,13 @@
                                 </div>
                                 <hr>
                                 <br>
-                                <button type="submit">Realizar Pedido</button>
+
+                                <div class="row">
+                                <div class="col-lg-12 text-right">
+                                    <button class="site-btn update-btn"><a href="pago.php" class="primary-btn chechout-btn">Proceder a Pagar</a></button>
+                                </div>
+                            </div>
+                                
                             </div>
                         </div>
                     </div>
