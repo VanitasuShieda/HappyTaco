@@ -92,43 +92,16 @@
             <form action="#" class="checkout-form">
                 <div class="row">
 
-                    <div class="col-lg-12">
-                        <hr>
-                        <div>
-                            <h3>Tu Informacion</h3>
-                        </div>
-                        <hr>
-                    </div>
 
                     <div class="col-lg-9">
 
-
-                        <div class="container-fluid">
-                            <div class="row">
-
-                                <div class="col-md-6 text-left text-lg-center">
-                                    <div class="diff-addr">
-                                        <input type="radio" id="dir2" name="direccion" value="dir2">
-                                        <label for="dir2">Enviar A Una Direccion Diferente</label>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 text-left text-lg-center">
-                                    <div class="diff-addr">
-                                        <input type="radio" id="dir1" name="direccion" value="dir1">
-                                        <label for="dir1" name="direccion">Enviar A Mi Direccion</label>
-
-                                    </div>
-                                </div>
+                        <div class="col-lg-12">
+                            <hr>
+                            <div>
+                                <h3>Tu Informacion</h3>
                             </div>
-                            <tr>
-                                <td>
-                                    <input name="radio_comprobar" id="radio_comprobar" type="button" value="Comprobar" />
-                                    <input name="radio_activar" id="radio_activar" type="button" value="Activar" />
-                                    <input name="radio_desactivar" id="radio_desactivar" type="button" value="Desactivar" />
-                                </td>
-                            </tr>
+                            <hr>
                         </div>
-
 
 
                         <div id="direccion">
@@ -202,7 +175,7 @@
 
 
                     <!--  script que me llene la tabla  -->
-                    <div class="col-lg-3">
+                    <div class="col-lg-3-disp-table">
                         <div class="order-table" id="table2">
                             <section class="contact-section">
                                 <h2>Tu Carrito Esta Vacio!</h2>
@@ -224,23 +197,24 @@
                     <div class="col-lg-12">
                         <div class="payment-method diff-addr">
                             <hr>
-                            <h3>Payment</h3>
-                            <hr>
+                            <h3>Metodos de Pago</h3>
                             <div>
                                 <div>
-                                    <label for="pago1" name="metodopago" value="PayPal">PayPal <img src="img/paypal.jpg" alt=""> </label>
-                                    <input type="radio" name="metodopago" id="pago1">
+                                    <button onclick="pagoPaypal()" class="site-btn clear-btn">Paypal
+                                        <img src="img/paypal.jpg" alt=""> </button>
+                                    <span id="paypal"></span>
                                 </div>
                                 <div>
-                                    <label for="pag2" name="metodopago" value="TCD">Tarjeta Credito / Debito<img src="img/mastercard.jpg" alt=""></label>
-                                    <input type="radio" name="metodopago" id="pago3" value="pago3">
+                                    <button onclick="pagoTarjeta()" class="site-btn clear-btn">Tarjeta Credito / Debito<img src="img/mastercard.jpg" alt=""></button>
+                                    <span id="tarjeta"></span>
                                 </div>
                                 <div>
-                                    <label for="pago3" name="metodopago" value="PR">Pagar al Recibir</label>
-                                    <input type="radio" name="metodopago" id="pago3">
-                                    </divz>
+                                    <button class="site-btn update-btn" onclick="pagoOXXO()">Pago Mediante Oxxo<img src="img/oxxo.jpg" alt=""></button>
+                                    <span id="oxxo"></span>
                                 </div>
-                                <button type="submit">Place your order</button>
+                                <hr>
+                                <br>
+                                <button type="submit">Realizar Pedido</button>
                             </div>
                         </div>
                     </div>

@@ -20,7 +20,7 @@
 		}
 	</script>
 
-	
+
 </head>
 
 <body>
@@ -135,10 +135,25 @@
 						<ul class="disp-table">
 							<?php
 							if (isset($_COOKIE["cartshop"])) {
+								if ($_COOKIE["cartshop"] == "[]") {
+									echo '
+										 <div class="order-table" id="table">
+												<section class="contact-section">
+												<h2>Tu Carrito Esta Vacio!</h2>
+												<hr>
+												<h4>No Hay TAQUITOS!!</h4>
+												<img src="img/espera.gif" alt="nave" style="height: 90%;
+													width: 90%;">
+												<h5>Los taquitos probablemente se fueron volando...</h5>
+												<h6>deberias probar comprar mas...</h6>
+												<br>											
+												</section>
+										</div> ';
+								} else {
+									echo ' <div class="order-table" id="table">
 								
-								echo ' <div class="order-table" id="table">
-								<p>el carro existe</p>
 									</div> ';
+								}
 							} else {
 								echo '
 								 <div class="order-table" id="table">
@@ -152,12 +167,12 @@
 										<h6>deberias probar comprar mas...</h6>
 										<br>											
 										</section>
-								</div> ';	
+								</div> ';
 							}
 
 							?>
-								
-								<script src="js/carr.js"></script>
+
+							<script src="js/carr.js"></script>
 
 						</ul>
 

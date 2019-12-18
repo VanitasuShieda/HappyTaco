@@ -10,8 +10,8 @@ nav {
     height: 150px;
 }
 
-.imgshop{
-    width: 168px; 
+.imgshop {
+    width: 168px;
     height: 211px;
 }
 
@@ -165,7 +165,7 @@ nav li ul li ul {
     top: 0px;
 }
 
-nav .disp-table{
+nav .disp-table {
     right: 200px;
 }
 
@@ -273,8 +273,8 @@ header a {
 .cart-table table thead {
     border-bottom: 2px solid #D0D7DB;
 }
-f
-.cart-table table thead tr th {
+
+f .cart-table table thead tr th {
     color: #838383;
     font-size: 12px;
     font-weight: 500;
@@ -345,7 +345,7 @@ f
     height: 100%;
 }
 
-.qtybtn{
+.qtybtn {
     height: 56px;
     width: 173px;
     border: 2px solid #EEF1F2;
@@ -567,8 +567,6 @@ f
     color: #1e1e1e;
 }
 
-
-
 .order-table {
     background: #f9fbfb;
     margin-top: 30px;
@@ -579,16 +577,22 @@ f
     padding-right: 20px;
     height: 90%;
     width: 90%;
-    overflow:auto;
+    overflow: auto;
     border-radius: 15px;
 }
 
-.disp-table{
+.disp-table {
     height: 600px;
     width: 400px;
 }
 
-
+.col-lg-3-disp-table {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    height: 600px;
+    width: 400px;
+    margin-bottom: 25px;
+}
 
 .order-table .cart-item {
     overflow: hidden;
