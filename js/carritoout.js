@@ -49,6 +49,11 @@ function pagoOXXO() {
     contenido.appendChild(img);
 
 
+    carrito = "[]";
+    cuponesactive = "[]";
+    document.cookie = "cartshop = " + JSON.stringify(carrito);
+    document.cookie = "cuponesactive = " + JSON.stringify(cuponesactive);
+
 }
 
 
