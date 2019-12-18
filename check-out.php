@@ -66,7 +66,7 @@
     <!-- Header Info End -->
     <br>
 
-  
+
     <hr><br>
 
     <!-- Page Add Section Begin -->
@@ -203,22 +203,17 @@
 
                     <!--  script que me llene la tabla  -->
                     <div class="col-lg-3">
-                        <div class="order-table">
-                            <div class="cart-item">
-                                <span>Product</span>
-                                <p class="product-name">Blue Dotted Shirt</p>
+                        <div class="order-table" id="table2">
+                            <section class="contact-section">
+                                <h2>Tu Carrito Esta Vacio!</h2>
+                                <hr>
+                                <h4>No Hay TAQUITOS!!</h4>
+                                <img src="img/espera.gif" alt="nave" style="height: 90%;
+											width: 90%;">
+                                <h5>Los taquitos probablemente se fueron volando...</h5>
+                                <h6>deberias probar comprar mas...</h6>
                                 <br>
-                                <span>Price</span>
-                                <p>$29</p>
-                                <br>                     
-                                <span>Quantity</span>
-                                <p>1</p>
-                            </div>
-
-                            <div class="cart-total">
-                                <span>Total</span>
-                                <p>$39</p>
-                            </div>
+                            </section>
                         </div>
                     </div>
                 </div>
@@ -256,7 +251,7 @@
     <br><br><br><br>
 
     <!-- End Main -->
-
+    <script src="js/carritoout.js"></script>
 
     <!-- Footer -->
     <?php

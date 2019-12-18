@@ -123,9 +123,6 @@
 
 					</li>
 
-					
-
-
 					<li class="nav-item">
 						<button class="btn">
 							<div class="up-item">
@@ -143,9 +140,19 @@
 								<p>el carro existe</p>
 									</div> ';
 							} else {
-								echo ' <div class="order-table" id="table">
-										<p>tu carrito esta vacio</p>
-									</div> ';
+								echo '
+								 <div class="order-table" id="table">
+										<section class="contact-section">
+										<h2>Tu Carrito Esta Vacio!</h2>
+										<hr>
+										<h4>No Hay TAQUITOS!!</h4>
+										<img src="img/espera.gif" alt="nave" style="height: 90%;
+											width: 90%;">
+										<h5>Los taquitos probablemente se fueron volando...</h5>
+										<h6>deberias probar comprar mas...</h6>
+										<br>											
+										</section>
+								</div> ';	
 							}
 
 							?>

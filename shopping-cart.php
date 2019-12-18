@@ -39,7 +39,7 @@
     include 'nav.php';
     ?>
 
-
+   
     <!-- Main-->
 
     <br><br>
@@ -64,7 +64,6 @@
                     <tbody id="tbody">
                         <tr>
                             <td class="product-col">
-
                                 <img src="img/product/product-1.jpg" alt="">
                                 <div class="p-title">
                                     <h5>Blue Dotted Shirt</h5>
@@ -160,24 +159,16 @@
             </div>
         </div>
 
-        <div class="container spad">
-            <section class="footer-section1">
-                <div>
-                    <img src="img/espera.gif" alt="">
-                </div>
-                <div>
-                    <p>tu carrito esta vacio! realiza una compra </p>
-                </div>
-            </section>
-        </div>
+       
         <!--  en caso de que este vacia mostrar esta imagen -->
 
 
     </div>
     <!-- Cart Page Section End -->
-
+   
     <!-- End Main -->
-
+    <script src="js/carrito.js"></script>
+   
 
     <!-- Footer -->
     <?php

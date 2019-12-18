@@ -10,6 +10,11 @@ nav {
     height: 150px;
 }
 
+.imgshop{
+    width: 168px; 
+    height: 211px;
+}
+
 .navbar {
     position: relative;
     display: -ms-flexbox;
@@ -77,8 +82,8 @@ body {
 }
 
 .imgcart {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
 
 .contact-section .der {
@@ -268,7 +273,7 @@ header a {
 .cart-table table thead {
     border-bottom: 2px solid #D0D7DB;
 }
-
+f
 .cart-table table thead tr th {
     color: #838383;
     font-size: 12px;
@@ -566,18 +571,21 @@ header a {
 
 .order-table {
     background: #f9fbfb;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-left: 25px;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 25px;
-    height: 600px;
-    width: 400px;
+    height: 90%;
+    width: 90%;
+    overflow:auto;
+    border-radius: 15px;
 }
 
-.cart-item table{
-    height: 100%;
-    width:100%;
+.disp-table{
+    height: 600px;
+    width: 400px;
 }
 
 

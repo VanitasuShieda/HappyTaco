@@ -1,27 +1,22 @@
-var productos;
 var ofertas;
-var carrito = new Array();
+var carrito =  new Array();
 
+window.onload = function() {
+     
+    document.getElementById("cartn").innerHTML = "0"; 
 
-
-window.onload = function () {
-    document.getElementById("cartn").innerHTML = "0";
-
-    if (getCookie("cartshop")) {
+    if( getCookie("cartshop")  ) {
         var aux = JSON.parse(getCookie("cartshop"));
-        for (var k = 0; k < aux.length; k++) {
+        for(var  k=0; k<aux.length; k++){
             carrito.push(aux[k]);
-        }
-        ofertas = aux.length;
-
-        myFunction();
+        }      
 
     }
-
-
+    
+    ofertas= aux.length;
+    myFunction()
+         
 };
-
-
 
 function myFunction() {
 
@@ -31,6 +26,11 @@ function myFunction() {
     var tot;
     var numero = document.getElementById("cartn");
     numero.innerHTML = carrito.length;
+   
+    var pagetable = document.getElementById("table2");
+    pagetable.innerHTML = "";
+    pagetable.className = "order-table";
+
     var ptable = document.getElementById("table"); //modificar el contenido de la tabla
     ptable.innerHTML = "";
     ptable.className = "order-table";
@@ -164,10 +164,11 @@ function myFunction() {
             tabpadre.appendChild(tab4);
         }
         caritem.appendChild(tabpadre);
-
+        var car2 = caritem;
         ptable.appendChild(caritem);
+        pagetable.appendChild(car2);
         ptable.appendChild(document.createElement("hr"));
-
+        pagetable.appendChild(document.createElement("hr"));
     } //fin for
 
     var cartotal = document.createElement("div");
@@ -180,8 +181,10 @@ function myFunction() {
 
     cartotal.appendChild(ctotal1);
     cartotal.appendChild(ctotal2);
+    var vare2 = cartotal;
 
     ptable.appendChild(cartotal);
+    pagetable.appendChild(vare2);
     ptable.appendChild(document.createElement("br"));
 
 }
