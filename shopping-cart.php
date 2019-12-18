@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 
 <head>
     <title>HappyTaco - Shopping Cart</title>
@@ -93,7 +93,7 @@
                     </div>
                     <div class="col-lg-5 offset-lg-1 text-left text-lg-right">
                         <div class="site-btn clear-btn"><a href="index.php">Limpiar</a></div>
-                        <div class="site-btn update-btn">Actualizar</div>
+                        <div class="site-btn update-btn"><button onclick="pagecar()">Actualizar</button></div>
                     </div>
                 </div>
             </div>
@@ -159,8 +159,6 @@
             </div>
         </div>
 
-       
-        <!--  en caso de que este vacia mostrar esta imagen -->
 
 
     </div>
